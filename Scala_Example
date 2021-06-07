@@ -1,0 +1,35 @@
+import scala.language.postfixOps
+import scala.collection.immutable._
+import scala.io.StdIn.readLine
+
+
+class List_Number(number:Int )
+{
+    
+    
+    var list_value : List[Int] = List()
+  
+    def Create_List()
+    {
+      list_value = 1 to 100 toList
+      
+      
+    }
+     
+    def Extract()
+    {
+      list_value(number)
+      
+    }
+}
+object Main 
+{
+      
+    // Main method
+    def main(args: Array[String]) 
+    {
+          
+        val input = readLine()
+        var obj = new List_Number(input);
+    }
+}
